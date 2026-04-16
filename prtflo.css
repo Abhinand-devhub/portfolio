@@ -1,0 +1,54 @@
+body{
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: repeat; */
+}
+.navbar{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    background-color: rgba(131, 131, 131, 0.8);
+}
+
+.nvname {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+#cont {
+    margin-top: 150px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: rgba(131, 131, 131, 0.2);
+    
+}
+
+#doyu {
+    color: #2f11a8;
+}
+
+#abhi {
+    font-size: 60px;
+    color: lightslategray;
+}
+
+#about {
+    color: white;
+    margin: 0px;
+    text-align: justify;
+}
+.card{
+    background-color: rgba(55, 42, 126, 0.2);
+    justify-content: center;
+}
+.btn{
+    text-decoration: none;
+}
+.card-img-overlay {
+  pointer-events: none;
+}
+.dropdown-menu {
+  width: 100%;
+}
