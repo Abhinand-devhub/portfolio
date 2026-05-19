@@ -7,16 +7,17 @@ body{
     z-index: 999;
     top: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: #10B981;
+    opacity: 0.6;
 }
 
 #cont {
-    margin-top: 150px;
-    margin-bottom: 100px;
     margin-left: 100px;
     margin-right: 100px;
     background-color: rgba(0, 0, 0, 0.3);
-    
+}
+#first,#second,#third{
+    padding-top: 150px;
 }
 
 #doyu {

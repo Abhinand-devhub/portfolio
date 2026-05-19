@@ -21,16 +21,18 @@
     <a class="nvname nav-link" href="#">ABHINAND KK</a>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="#cont">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#cards">Works</a></li>
+        <li class="nav-item"><a class="nav-link" href="#first">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#second">Works</a></li>
+        <li class="nav-item"><a class="nav-link" href="#third">Expertise</a></li>
         <li class="nav-item"><a class="nav-link" href="http://www.linkedin.com/in/abhinand-kk" target="_blank">About</a></li>
         <li class="nav-item"><a class="nav-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=abhinandkk123@gmail.com" target="_blank">Contact</a></li>
       </ul>
     </div>
   </nav>
-<!-- section 1 content -->
+<!-- section 1 intro -->
+  <div id="first">
   <div
-    class="container d-flex flex-wrap align-items-center justify-content-between border rounded border-secondary p-5 rounded"
+    class="container d-flex flex-wrap align-items-center justify-content-between border rounded border-secondary p-4 rounded"
     id="cont">
 
     <div class="w-50">
@@ -48,13 +50,15 @@
     </div>
 
     <div class="img">
-      <img src="https://res.cloudinary.com/daaz5kwqu/image/upload/v1779168011/abhi_khvlst.png" alt="Profile" width="400px">
+      <img src="https://res.cloudinary.com/daaz5kwqu/image/upload/v1779175129/abhi_khvlst.png" alt="Profile" width="400px">
     </div>
 
   </div>
+  </div>
 
-  <!-- section2 cards -->
-  <div class="container d-flex flex-wrap align-items-center justify-content-between" id="cards">
+  <!-- section2 projects -->
+   <div id="second">
+  <div class="container" id="cards">
     <!-- project -->
     <div class="card mb-5" style="width: 350px;  background-color: rgba(0, 0, 0, 0.5);">
       <h3 class="card-title card-img-overlay">Projects</h3>
@@ -74,7 +78,12 @@
       <!-- button 4-->
       <button class="btn text-info">- O -</button>
     </div>
-    <!-- experience -->
+  </div>
+  </div>
+  <!-- section3 exp and skills -->
+   <div id="third">
+   <div class="container d-flex flex-wrap align-items-center justify-content-around" id="cards">
+        <!-- experience -->
     <div class="card mb-5" style="width: 350px; background-color: rgba(0, 0, 0, 0.5);">
       <h3 class="card-title card-img-overlay">Experience</h3>
       <img class="card-img" src="https://res.cloudinary.com/daaz5kwqu/image/upload/v1779168008/exp_zhlbwu.jpg" alt="" width="350px" height="200px">
@@ -198,16 +207,30 @@
           </ul>
         </div>
       </div>
+      <!-- button4 -->
+      <button class="btn text-info" data-bs-toggle="collapse" data-bs-target="#colskil4">
+        Soft Skills
+      </button>
+      <div class="collapse w-100" id="colskil4">
+        <div class="card bg-dark text-light">
+          <p class="text-secondary px-3">Work Ethics</p>
+          <ul><li>Being responsible, punctual and committed to work.</li></ul>
+          <p class="text-secondary px-3">Adaptability</p>
+          <ul><li>Ability to adjust to new situations, technologies or work environments.</li></ul>
+          <p class="text-secondary px-3">Teamwork</p>
+          <ul><li>Working effectively with colleagues to complete tasks and achieve goals.</li></ul>
+          <p class="text-secondary px-3">Leadership</p>
+          <ul><li>Ability to guide or support a team when required.</li></ul>
+          <p class="text-secondary px-3">Critical Thinking</p>
+          <ul><li>Analyzing situations logically before making decisions.</li></ul>
+        </div>
+      </div>
       <!-- button -->
       <button class="btn text-info" data-bs-toggle="collapse" data-bs-target="#">
         - O -
       </button>
     </div>
-  </div>
-
-  <!-- section3 end-section -->
-   <div>
-    
+   </div>
    </div>
 
 
