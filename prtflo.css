@@ -15,7 +15,7 @@ body{
     margin-bottom: 100px;
     margin-left: 100px;
     margin-right: 100px;
-    background-color: rgba(131, 131, 131, 0.1);
+    background-color: rgba(0, 0, 0, 0.3);
     
 }
 
@@ -44,4 +44,7 @@ body{
 .card-img-overlay {
   pointer-events: none;
   font-family: fantasy;
+}
+html{
+    scroll-behavior: smooth;
 }
