@@ -12,23 +12,23 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-
 </head>
 
-<body style="background-image: url(https://res.cloudinary.com/daaz5kwqu/image/upload/v1779168006/bgd_img_eswne8.webp);">
+<body style="background-image: url(https://res.cloudinary.com/daaz5kwqu/image/upload/v1779377085/textured-background_okjgtc.webp);">
+
   <!-- section1 navbar-->
   <nav class="navbar navbar-expand-lg  px-5 fixed-top">
-    <a class="nvname nav-link" href="#">ABHINAND KK</a>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="#first">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#second">Works</a></li>
-        <li class="nav-item"><a class="nav-link" href="#third">Expertise</a></li>
-        <li class="nav-item"><a class="nav-link" href="http://www.linkedin.com/in/abhinand-kk" target="_blank">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=abhinandkk123@gmail.com" target="_blank">Contact</a></li>
+        <li class="nav-item"><a class="nav-link buton" href="#first">Home</a></li>
+        <li class="nav-item"><a class="nav-link buton" href="#second">Works</a></li>
+        <li class="nav-item"><a class="nav-link buton" href="#third">Expertise</a></li>
+        <li class="nav-item"><a class="nav-link buton" href="http://www.linkedin.com/in/abhinand-kk" target="_blank">About</a></li>
+        <li class="nav-item"><a class="nav-link buton" href="https://mail.google.com/mail/?view=cm&fs=1&to=abhinandkk123@gmail.com" target="_blank">Contact</a></li>
       </ul>
     </div>
   </nav>
+
 <!-- section 1 intro -->
   <div id="first">
   <div
@@ -46,7 +46,7 @@
       </p><br><br>
       <button type="button" class="btn btn-outline-success">
         <a class="nav-link" href="https://drive.google.com/file/d/1vrKg5Xxm2IXobqAwlOcoQ15CLZrfUweG/view?usp=drive_link"
-          target="_blank">Download Resume ▽</a></button>
+          target="_blank" id="down">Download Resume ▽</a></button>
     </div>
 
     <div class="img">
@@ -56,39 +56,41 @@
   </div>
   </div>
 
-  <!-- section2 projects -->
+<!-- section2 projects -->
    <div id="second">
-  <div class="container" id="cards">
+  <div class="container d-flex flex-wrap align-items-center justify-content-around">
     <!-- project -->
-    <div class="card mb-5" style="width: 350px;  background-color: rgba(0, 0, 0, 0.5);">
-      <h3 class="card-title card-img-overlay">Projects</h3>
-      <img class="card-img" src="https://res.cloudinary.com/daaz5kwqu/image/upload/v1779168007/proj_eduffh.jpg" alt="" width="350px" height="200px">
-      <!-- button 1-->
-      <button class="btn text-info"><a class="nav-link text-info"
-          href="https://github.com/Abhinand-devhub/js-calculator" target="_blank">Simple
-          Calculator</a>
-      </button>
-      <!-- button 2-->
-      <button class="btn text-info"><a class="nav-link text-info"
-          href="https://abhinand-devhub.github.io/portfolio/" target="_blank">Portfolio</a>
-      </button>
-      <!-- button 3-->
-      <button class="btn text-info"><a class="nav-link text-info" href="" target="_blank">########</a>
-      </button>
-      <!-- button 4-->
-      <button class="btn text-info">- O -</button>
+    <div style="text-align: center;">
+      <h3 style="color: rgba(25, 135, 84);">Projects</h3>
+      <img class="card-img" src="https://res.cloudinary.com/daaz5kwqu/image/upload/v1779427657/proj_eduffh.png" alt="" width="700px" height="400px">
+    </div>
+    <div class="d-flex flex-column gap-5" style="width: 500px;">
+      <!-- calculator-->
+      <div class="btn btn-outline-success"><a class="nav-link"
+          href="https://github.com/Abhinand-devhub/js-calculator" target="_blank"><h3>Simple
+          Calculator</h3></a>
+      </div>
+      <!-- portfolio-->
+      <div class="btn btn-outline-success"><a class="nav-link"
+          href="https://abhinand-devhub.github.io/portfolio/" target="_blank"><h3>Portfolio Design</h3></a>
+      </div>
+      <!-- next link-->
+      <div class="btn btn-outline-success"><a class="nav-link"
+         href="" target="_blank"><h3>########</h3></a>
+      </div>
     </div>
   </div>
   </div>
-  <!-- section3 exp and skills -->
+
+<!-- section3 exp and skills -->
    <div id="third">
    <div class="container d-flex flex-wrap align-items-center justify-content-around" id="cards">
         <!-- experience -->
     <div class="card mb-5" style="width: 350px; background-color: rgba(0, 0, 0, 0.5);">
-      <h3 class="card-title card-img-overlay">Experience</h3>
-      <img class="card-img" src="https://res.cloudinary.com/daaz5kwqu/image/upload/v1779168008/exp_zhlbwu.jpg" alt="" width="350px" height="200px">
+      <h3 class="card-title card-img-overlay text-light">Experience</h3>
+      <img class="card-img" src="https://res.cloudinary.com/daaz5kwqu/image/upload/v1779427644/exp_zhlbwu.png" alt="" width="350px" height="200px">
       <!-- first button -->
-      <button class="btn text-info" data-bs-toggle="collapse" data-bs-target="#col1">
+      <button class="btn text-success " data-bs-toggle="collapse" data-bs-target="#col1">
         Python Intern
       </button>
       <div class="collapse" id="col1">
@@ -102,7 +104,7 @@
         </div>
       </div>
       <!-- second button -->
-      <button class="btn text-info" data-bs-toggle="collapse" data-bs-target="#col2">
+      <button class="btn text-success" data-bs-toggle="collapse" data-bs-target="#col2">
         Technical Marketing Engineer
       </button>
       <div class="collapse" id="col2">
@@ -116,7 +118,7 @@
         </div>
       </div>
       <!-- third button -->
-      <button class="btn text-info" data-bs-toggle="collapse" data-bs-target="#col3">
+      <button class="btn text-success" data-bs-toggle="collapse" data-bs-target="#col3">
         Store Manager
       </button>
       <div class="collapse" id="col3">
@@ -130,7 +132,7 @@
         </div>
       </div>
       <!-- fourth button -->
-      <button class="btn text-info" data-bs-toggle="collapse" data-bs-target="#col4">
+      <button class="btn text-success" data-bs-toggle="collapse" data-bs-target="#col4">
         Office Attendant
       </button>
       <div class="collapse" id="col4">
@@ -146,7 +148,7 @@
         </div>
       </div>
       <!-- fifth button -->
-      <button class="btn text-info" data-bs-toggle="collapse" data-bs-target="#col5">
+      <button class="btn text-success" data-bs-toggle="collapse" data-bs-target="#col5">
         Customer Relationship Executive
       </button>
       <div class="collapse" id="col5">
@@ -161,11 +163,11 @@
     </div>
     <!-- skills -->
     <div class="card mb-5" style="width: 350px; background-color: rgba(0, 0, 0, 0.5);">
-      <h3 class="card-title card-img-overlay">Skills</h3>
-      <img class="card-img" src="https://res.cloudinary.com/daaz5kwqu/image/upload/v1779168009/skill_u9vkib.jpg" alt="" width="350px" height="200px">
+      <h3 class="card-title card-img-overlay text-light">Skills</h3>
+      <img class="card-img" src="https://res.cloudinary.com/daaz5kwqu/image/upload/v1779427630/skill_phj5p0.png" alt="" width="350px" height="200px">
 
       <!-- button1 -->
-      <button class="btn text-info" data-bs-toggle="collapse" data-bs-target="#colskil1">
+      <button class="btn text-success" data-bs-toggle="collapse" data-bs-target="#colskil1">
         Programming & Automation
       </button>
       <div class="collapse" id="colskil1">
@@ -179,7 +181,7 @@
         </div>
       </div>
       <!-- button2 -->
-      <button class="btn text-info" data-bs-toggle="collapse" data-bs-target="#colskil2">
+      <button class="btn text-success" data-bs-toggle="collapse" data-bs-target="#colskil2">
         IT Support & Systems
       </button>
       <div class="collapse" id="colskil2">
@@ -195,7 +197,7 @@
         </div>
       </div>
       <!-- button3 -->
-      <button class="btn text-info" data-bs-toggle="collapse" data-bs-target="#colskil3">
+      <button class="btn text-success" data-bs-toggle="collapse" data-bs-target="#colskil3">
         Software & Tools
       </button>
       <div class="collapse w-100" id="colskil3">
@@ -208,7 +210,7 @@
         </div>
       </div>
       <!-- button4 -->
-      <button class="btn text-info" data-bs-toggle="collapse" data-bs-target="#colskil4">
+      <button class="btn text-success" data-bs-toggle="collapse" data-bs-target="#colskil4">
         Soft Skills
       </button>
       <div class="collapse w-100" id="colskil4">
@@ -226,12 +228,30 @@
         </div>
       </div>
       <!-- button -->
-      <button class="btn text-info" data-bs-toggle="collapse" data-bs-target="#">
+      <button class="btn text-success" data-bs-toggle="collapse" data-bs-target="#">
         - O -
       </button>
     </div>
    </div>
    </div>
+
+<!-- section4 social tags -->
+ <div class="container d-flex align-items-center justify-content-center gap-5" id="fourth">
+  <a href="https://www.instagram.com/_a_bhi_na_nd_/" target="_blank">
+      <img src="https://res.cloudinary.com/daaz5kwqu/image/upload/v1779429876/instagram_tkwtw0.png"  alt="Instagram" width="30" height="30">
+    </a>
+  <a href="https://www.facebook.com/abhinand.unni.18" target="_blank">
+      <img src="https://res.cloudinary.com/daaz5kwqu/image/upload/v1779429875/facebook_bwimtt.png"  alt="Facebook" width="30" height="30">
+    </a>
+  <a href="http://www.linkedin.com/in/abhinand-kk" target="_blank">
+      <img src="https://res.cloudinary.com/daaz5kwqu/image/upload/v1779429873/linkedln_kdsqpi.png"  alt="Linkedln" width="30" height="30">
+    </a>
+ </div>
+
+<!-- footer -->
+<footer class="d-flex justify-content-center pt-2">
+   <p>© 2026 Abhinand</p>
+</footer>
 
 
 
