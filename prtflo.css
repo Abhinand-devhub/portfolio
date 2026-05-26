@@ -3,22 +3,26 @@ body{
     background-position: center;
 }
 .navbar{
-    position: fixed;
     z-index: 999;
     top: 0;
     width: 100%;
     background-color: rgba(25, 135, 84, 0.7);
 }
+.navbar-nav{
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 8px;
+}
 #cont {
-    margin-left: 100px;
-    margin-right: 100px;
+    width: 100%;
+    max-width: 1150px;
     background-color: rgba(0, 0, 0, 0.5);
 }
 #first,#second,#third{
     padding-top: 150px;
 }
 #fourth,#fifth{
-    padding-top: 50px;
+    padding-top: 100px;
 }
 #doyu {
     color: #198754;
@@ -28,11 +32,13 @@ body{
 #abhi {
     font-size: 60px;
     color: #F8FAFC;
+    background: linear-gradient(to right, #ffffff, #009921);
+    background-clip: text;
+    color: transparent;
 }
 #about {
     color: rgb(150, 150, 150);
     margin: 0px;
-    text-align: justify;
 }
 .card{
     justify-content: center;
@@ -79,6 +85,28 @@ footer{
     overflow: hidden;
     z-index: -1;
 }
+.card-title{
+    text-align: center;
+    opacity: 0;
+    font-family: monospace;
+}
+.card:hover .card-title{
+    opacity: 1;
+}
+#projimg{
+    animation: blink 2s infinite;
+}
+@keyframes blink{
+    0%{
+        opacity:1;
+    }
+    50%{
+        opacity:0.3;
+    }
+    100%{
+        opacity:1;
+    }
+}
 
 
 .triangle{
@@ -93,22 +121,22 @@ footer{
 }
 .t1{
     left: 10%;
-    border-bottom-color: rgba(94, 255, 0, 0.1);
+    border-bottom-color: rgba(21, 255, 0, 0.05);
     animation-duration: 10s;
 }
 .t2{
-    left: 40%;
-    border-bottom-color: rgba(0, 255, 149, 0.1);
+    left: 35%;
+    border-bottom-color: rgba(0, 255, 149, 0.05);
     animation-duration: 15s;
 }
 .t3{
     left: 60%;
-    border-bottom-color: rgba(0, 255, 200, 0.1);
+    border-bottom-color: rgba(0, 255, 200, 0.05);
     animation-duration: 12s;
 }
 .t4{
     left: 90%;
-    border-bottom-color: rgba(0, 162, 255, 0.1);
+    border-bottom-color: rgba(0, 162, 255, 0.05);
     animation-duration: 13s;
 }
 @keyframes float{
