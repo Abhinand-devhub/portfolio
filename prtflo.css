@@ -1,82 +1,108 @@
-body{
+body {
     background-repeat: repeat;
     background-position: center;
 }
-.navbar{
+
+.navbar {
     z-index: 999;
     top: 0;
     width: 100%;
     background-color: rgba(25, 135, 84, 0.7);
 }
-.navbar-nav{
+
+.navbar-nav {
     display: flex !important;
     flex-direction: row !important;
-    gap: 8px;
+    gap: 10px;
 }
+
 #cont {
     width: 100%;
     max-width: 1150px;
     background-color: rgba(0, 0, 0, 0.5);
 }
-#first,#second,#third{
+
+.doc {
+    max-width: 575px;
+}
+
+#first,
+#second,
+#third {
     padding-top: 150px;
 }
-#fourth,#fifth{
+
+#fourth,
+#fifth {
     padding-top: 100px;
 }
+
 #doyu {
     color: #198754;
     font-weight: 800;
     font-family: monospace
 }
+
 #abhi {
     font-size: 60px;
     color: #F8FAFC;
-    background: linear-gradient(to right, #ffffff, #009921);
+    background: linear-gradient(to right, #ffffff, #00ff37);
     background-clip: text;
     color: transparent;
 }
+
 #about {
     color: rgb(150, 150, 150);
     margin: 0px;
 }
-.card{
+
+.card {
     justify-content: center;
 }
+
 .card-img-overlay {
-  pointer-events: none;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    pointer-events: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-.buton{
+
+.buton {
     font-family: cursive;
     color: rgb(0, 0, 0) !important;
 }
-.buton:hover{
+
+.buton:hover {
     color: rgb(255, 255, 255) !important;
 }
-.btn:hover{
+
+.btn:hover {
     color: rgb(255, 255, 255) !important;
 }
-footer{
-    background:rgba(0, 0, 0,0.3);
-    color:white;
+
+footer {
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
 }
-.img-btn{
-    opacity:0.6;
+
+.img-btn {
+    opacity: 0.6;
 }
-.img-btn:hover{
-    transform:translateY(-10px);
+
+.img-btn:hover {
+    transform: translateY(-10px);
     transition: 0.3s;
-    opacity:1;
+    opacity: 1;
 }
-.img-btn2:hover{
+
+.img-btn2:hover {
     transform: rotate(45deg) scale(2);
     transition: 0.5s;
 }
-.bg-shapes{
+
+.bg-shapes {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -85,66 +111,101 @@ footer{
     overflow: hidden;
     z-index: -1;
 }
-.card-title{
+
+.card-title {
     text-align: center;
     opacity: 0;
     font-family: monospace;
 }
-.card:hover .card-title{
+
+.card:hover .card-title {
     opacity: 1;
 }
-#projimg{
+
+#projimg {
     animation: blink 2s infinite;
 }
-@keyframes blink{
-    0%{
-        opacity:1;
+
+@keyframes blink {
+    0% {
+        opacity: 1;
     }
-    50%{
-        opacity:0.3;
+
+    50% {
+        opacity: 0.3;
     }
-    100%{
-        opacity:1;
+
+    100% {
+        opacity: 1;
     }
 }
 
 
-.triangle{
+
+
+.triangle {
     position: absolute;
     width: 0;
     height: 0;
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
-    border-bottom: 86px solid rgba(255,255,255,0.1);
+    border-bottom: 86px solid rgba(255, 255, 255, 0.1);
 
     animation: float 2s infinite linear;
 }
-.t1{
+
+.t1 {
     left: 10%;
     border-bottom-color: rgba(21, 255, 0, 0.05);
     animation-duration: 10s;
 }
-.t2{
+
+.t2 {
     left: 35%;
     border-bottom-color: rgba(0, 255, 149, 0.05);
     animation-duration: 15s;
 }
-.t3{
+
+.t3 {
     left: 60%;
     border-bottom-color: rgba(0, 255, 200, 0.05);
     animation-duration: 12s;
 }
-.t4{
+
+.t4 {
     left: 90%;
     border-bottom-color: rgba(0, 162, 255, 0.05);
     animation-duration: 13s;
 }
-@keyframes float{
-    0%{
+
+@keyframes float {
+    0% {
         transform: translateY(100vh) rotate(0deg);
     }
 
-    100%{
+    100% {
         transform: translateY(-120vh) rotate(360deg);
     }
+}
+
+
+
+/* to responsive on mobiles */
+@media(max-width: 450px) {
+    .navbar-nav {
+        display: flex;
+        flex-direction:row !important;
+        justify-content: end !important;
+        width: 100%;
+        position: relative
+    }
+    #first,#second{
+        width: fit-content !important;
+        margin: 0% !important;
+    }
+    #foot{
+        width: 100% !important;
+    }
+
+    
 }
