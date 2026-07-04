@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Abhinand KK</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+<style>
+/* ---------- Design tokens ---------- */
+:root{
+  --bg: #000000;
+  --card-bg: #101018;
+  --text-muted: rgb(150,150,150);
+  --text-bright: #ffffff;
+  --accent-blue: rgba(58,58,255,0.733);
+  --accent-green: #51d483;
+  --nav-bg: rgba(25,135,84,0.7);
+}
+
+*{ box-sizing: border-box; }
+html{ overflow-x: hidden; }
+body{ background-color: var(--bg); overflow-x: hidden; }
+
+/* ---------- Navbar ---------- */
+.navbar{
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  width: 100%;
+  background-color: var(--nav-bg);
+}
+.buton{
+  font-family: cursive;
+  color: var(--text-bright) !important;
+}
+.buton:hover{ color: #000000 !important; }
+.navbar-toggler{
+  border-color: rgba(255,255,255,0.5);
+}
+.navbar-toggler-icon{
+  filter: invert(1);
+}
+
+/* ---------- Hero ---------- */
+.about{
+  padding-top: 150px;
+  color: var(--accent-blue);
+  font-family: cursive;
+  animation: blink 2s infinite;
+}
+@media (prefers-reduced-motion: reduce){
+  .about{ animation: none; }
+}
+@keyframes blink{
+  0%{ opacity:1; }
+  50%{ opacity:0.4; }
+  100%{ opacity:1; }
+}
+.hero{
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+.hero-text{
+  flex: 1 1 320px;
+  min-width: 280px;
+}
+.highlight{
+  background: linear-gradient(to right, #3b82f6, #097733);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+h1{
+  color: var(--text-bright);
+  line-height: 1.2;
+  font-size: clamp(1.8rem, 4vw, 2.75rem);
+}
+.bio{
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.7;
+}
+.bio2{
+  color: var(--accent-green);
+  line-height: 1.7;
+  margin: 12px 0 0;
+}
+.photo{
+  flex: 0 1 260px;
+  border-radius: 30px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.photo img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.page-break{
+  width: 80%;
+  height: 1px;
+  background: #1f2937;
+  margin: 60px auto;
+}
+.section-label{
+  padding-top: 20px;
+  color: var(--accent-blue);
+  font-family: cursive;
+}
+
+/* ---------- Layout container ---------- */
+.section{
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---------- Cards ---------- */
+.card1, .card2, .ach-card, .lang-card, .interest-pill, .edu-card, .invitemain{
+  background-color: var(--card-bg);
+  color: var(--text-muted);
+}
+.card1{ flex: 1 1 340px; max-width: 500px; }
+.card2{ flex: 1 1 200px; max-width: 250px; }
+.story-grid{ display: flex; flex-wrap: wrap; gap: 24px; row-gap: 30px; }
+.skills-grid{ display: flex; flex-wrap: wrap; gap: 24px; }
+h4, h5{ font-family: monospace; color: #d1d1d1; }
+h3, h2{ color: var(--text-bright); }
+
+.tag1, .tag2, .tag3, .tag4{
+  border-radius: 10px;
+  display: inline-block;
+  margin: 3px;
+  padding: 4px 8px;
+}
+.tag1{ background-color: #09773346; color: #00ff6296; }
+.tag2{ background-color: #063b664d; color: #006ed4; }
+.tag3{ background-color: #7a810e49; color: #bcd10081; }
+.tag4{ background-color: #60047249; color: #e100ff9f; }
+
+/* ---------- Education ---------- */
+.edu-list{ display: flex; flex-direction: column; gap: 15px; }
+.edu-card{
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.edu-year{ color: #0084ff; white-space: nowrap; }
+
+/* ---------- Achievements ---------- */
+.ach-grid{ display: flex; flex-wrap: wrap; gap: 20px; }
+.ach-card{ flex: 1 1 200px; max-width: 250px; border-radius: 15px; }
+
+/* ---------- Languages / Interests ---------- */
+.lang-grid, .interest-list{ display: flex; flex-wrap: wrap; gap: 16px; }
+.lang-card{ flex: 0 1 150px; border-radius: 15px; }
+.interest-pill{ flex: 0 1 150px; border-radius: 30px; }
+
+/* ---------- Invite ---------- */
+.invitemain{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  margin: 100px auto;
+  padding: 20px;
+  gap: 20px;
+}
+.invite{ flex: 1 1 320px; padding: 20px !important; }
+.invite-button{ display: flex; flex-wrap: wrap; gap: 10px; padding: 20px !important; }
+.btn{ border-radius: 30px; white-space: nowrap; }
+
+/* ---------- Responsive breakpoints ---------- */
+@media (max-width: 768px){
+  .about{ padding-top: 110px; text-align: center; }
+  .hero{ flex-direction: column-reverse; text-align: center; }
+  .photo{ flex: 0 1 200px; }
+  .bio, .bio2{ text-align: left; }
+  .card1, .card2{ max-width: 100%; flex: 1 1 100%; }
+  .invitemain{ text-align: center; justify-content: center; }
+  .invite-button{ justify-content: center; }
+}
+
+@media (max-width: 480px){
+  .section{ padding: 0 16px; }
+  h1{ font-size: 1.6rem; }
+  .navbar p{ font-size: 1rem; }
+  .edu-card{ flex-direction: column; align-items: flex-start; }
+}
+</style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg px-4">
+    <p style="color: rgb(255, 255, 255); margin: 0;">ABHINAND</p>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks"
+      aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navLinks">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link buton" href="https://abhinand-devhub.github.io/portfolio/">Back to Home</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="section">
+    <div class="about">ABOUT ME</div>
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Developer. Problem-solver.<br /><span class="highlight">Lifelong Learner.</span></h1>
+        <p class="bio">
+          I'm Abhinand KK, a Kerala-based full-stack developer with over 5 years of cross-industry experience — from
+          industrial automation and IT support to technical marketing. I bring a grounded, problem-first approach to
+          software development, combining real-world operational insight with modern web technologies.
+        </p>
+        <p class="bio2">Currently deepening skills in Django &amp; REST APIs</p>
+      </div>
+      <div class="photo">
+        <img src="https://res.cloudinary.com/daaz5kwqu/image/upload/v1779549351/about_img_fh5mia.webp" alt="Abhinand KK">
+      </div>
+    </div>
+  </div>
+
+  <div class="page-break"></div>
+
+  <!-- MY STORY -->
+  <div class="section">
+    <div class="section-label">BACKGROUND</div>
+    <div class="section-title py-3"><h3>My Story</h3></div>
+    <div class="story-grid">
+      <div class="card card1 p-3">
+        <h4>Industrial Roots</h4>
+        <p>My journey started with a B.Tech in Applied Electronics &amp; Instrumentation, where I developed a deep
+          understanding of PLC programming, SCADA systems, and industrial automation — skills that gave me a strong
+          foundation in logic and systems thinking.</p>
+      </div>
+      <div class="card card1 p-3">
+        <h4>Transitioning into Development</h4>
+        <p>Over 5+ years across diverse roles — IT support at Zoological Survey of India, technical marketing, store
+          operations — I consistently gravitated toward the digital and technical side. I'm now channeling that
+          experience into building scalable web applications as a full-stack developer.</p>
+      </div>
+      <div class="card card1 p-3">
+        <h4>Currently</h4>
+        <p>I'm currently interning as a Python Developer at Quest Innovative Solutions, working on front-end design with
+          HTML, CSS, and jQuery — while independently building projects and deepening my Python and backend skills.</p>
+      </div>
+      <div class="card card1 p-3">
+        <h4>What Drives Me</h4>
+        <p>I'm passionate about bridging the gap between complex systems and simple, user-friendly interfaces. My
+          cross-industry background gives me a unique perspective — I don't just write code; I understand the
+          operational context behind it.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-break"></div>
+
+  <!-- SKILLS -->
+  <div class="section">
+    <div class="section-label">Technical Skills</div>
+    <div class="section-title py-3"><h3>What I Work With</h3></div>
+    <div class="skills-grid">
+      <div class="card card2 p-3">
+        <h4>Frontend</h4>
+        <div class="tag-list">
+          <span class="tag1">HTML</span>
+          <span class="tag1">CSS</span>
+          <span class="tag1">JavaScript</span>
+          <span class="tag1">jQuery</span>
+          <span class="tag1">Bootstrap</span>
+        </div>
+      </div>
+      <div class="card card2 p-3">
+        <h4>Backend & Data</h4>
+        <div class="tag-list">
+          <span class="tag2">Python</span>
+          <span class="tag2">SQL</span>
+          <span class="tag2">C++</span>
+          <span class="tag2">Django (learning)</span>
+          <span class="tag2">REST APIs (learning)</span>
+        </div>
+      </div>
+      <div class="card card2 p-3">
+        <h4>Industrial Automation</h4>
+        <div class="tag-list">
+          <span class="tag3">PLC Programming</span>
+          <span class="tag3">SCADA</span>
+          <span class="tag3">HMI</span>
+          <span class="tag3">VFD</span>
+          <span class="tag3">Ladder Logic</span>
+        </div>
+      </div>
+      <div class="card card2 p-3">
+        <h4>Tools & Systems</h4>
+        <div class="tag-list">
+          <span class="tag4">MS Office</span>
+          <span class="tag4">AnyDesk</span>
+          <span class="tag4">ERP/CRM</span>
+          <span class="tag4">Photoshop</span>
+          <span class="tag4">Illustrator</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-break"></div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-label">Education</div>
+    <div class="section-title py-3"><h3>Academic Background</h3></div>
+    <div class="edu-list">
+      <div class="edu-card p-3">
+        <div>
+          <h4>B.Tech – Applied Electronics &amp; Instrumentation Engineering</h4>
+          <p>KMCT College of Engineering</p>
+        </div>
+        <div class="edu-year">2018</div>
+      </div>
+      <div class="edu-card p-3">
+        <div>
+          <h4>PGDIA – PG Diploma in Industrial Automation</h4>
+          <p>SMEC Automation Pvt. Ltd</p>
+        </div>
+        <div class="edu-year">2018</div>
+      </div>
+      <div class="edu-card p-3">
+        <div>
+          <h4>Plus Two – Biology Science</h4>
+          <p>Higher Secondary Education</p>
+        </div>
+        <div class="edu-year">2013</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-break"></div>
+
+  <!-- ACHIEVEMENTS -->
+  <div class="section">
+    <div class="section-label">Highlights</div>
+    <div class="section-title py-3"><h3>Achievements</h3></div>
+    <div class="ach-grid">
+      <div class="ach-card p-3">
+        <h5>Inventory Accuracy</h5>
+        Managed 500+ inventory items with 98% accuracy at KOEL CARE.
+      </div>
+      <div class="ach-card p-3">
+        <h5>Customer Efficiency</h5>
+        Reduced customer waiting time through streamlined service coordination.
+      </div>
+      <div class="ach-card p-3">
+        <h5>System Uptime</h5>
+        Supported office system maintenance, significantly reducing downtime events.
+      </div>
+      <div class="ach-card p-3">
+        <h5>Social Impact</h5>
+        Volunteered and donated blood stem cells on behalf of DATRI - Blood Stem Cell Donors Registry.
+      </div>
+    </div>
+  </div>
+
+  <div class="page-break"></div>
+
+  <!-- LANGUAGES -->
+  <div class="section">
+    <div class="section-label">Communication</div>
+    <div class="section-title py-3"><h3>Languages</h3></div>
+    <div class="lang-grid">
+      <div class="lang-card p-3">
+        <h4>Malayalam</h4>
+        <p>Native</p>
+      </div>
+      <div class="lang-card p-3">
+        <h4>English</h4>
+        <p>Advanced</p>
+      </div>
+      <div class="lang-card p-3">
+        <h4>Hindi</h4>
+        <p>Intermediate</p>
+      </div>
+      <div class="lang-card p-3">
+        <h4>Tamil</h4>
+        <p>Beginner</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-break"></div>
+
+  <!-- INTERESTS -->
+  <div class="section">
+    <div class="section-label">Beyond Work</div>
+    <div class="section-title py-3"><h3>Interests</h3></div>
+    <div class="interest-list">
+      <div class="interest-pill p-3"><span>📷</span> Photography</div>
+      <div class="interest-pill p-3"><span>🥾</span> Hiking</div>
+      <div class="interest-pill p-3"><span>🎣</span> Fishing</div>
+      <div class="interest-pill p-3"><span>🌿</span> Gardening</div>
+    </div>
+  </div>
+
+  <!-- INVITE -->
+  <div class="section">
+    <div class="invitemain">
+      <div class="invite p-5">
+        <h2>Let's build something together.</h2>
+        <p class="para">Open to entry-level full-stack roles. If you have an opportunity or just want to
+          connect, I'd love to hear from you.</p>
+      </div>
+      <div class="invite-button px-5">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=abhinandkk123@gmail.com" class="btn btn-primary"
+          target="_blank">
+          Get in Touch
+        </a>
+        <a href="http://www.linkedin.com/in/abhinand-kk" class="btn btn-outline-light" target="_blank">
+          LinkedIn →
+        </a>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
