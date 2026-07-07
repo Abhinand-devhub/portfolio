@@ -14,25 +14,26 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
 </head>
 
-<body
-  style="background-image: url(https://res.cloudinary.com/daaz5kwqu/image/upload/v1779377085/textured-background_okjgtc.webp);">
+<body style="background-image: url(media/textured-background.webp);">
 
   <!-- section1 navbar-->
-  <nav class="navbar fixed-top d-flex flex-wrap justify-content-end">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link buton" href="#first">Home</a></li>
-        <li class="nav-item"><a class="nav-link buton" href="#second">Works</a></li>
-        <li class="nav-item"><a class="nav-link buton" href="#third">Expertise</a></li>
-        <li class="nav-item"><a class="nav-link buton" href="#fourth">Certifications</a></li>
-        <li class="nav-item"><a class="nav-link buton" href="about.html" target="_parent">About</a></li>
-        <li class="nav-item"><a class="nav-link buton"
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=abhinandkk123@gmail.com" target="_blank">Contact</a>
-        </li>
-      </ul>
+  <nav class="navbar navbar-expand-lg fixed-top justify-content-end">
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav"><a class="nav-link buton" href="#first">Home</a></ul>
+      <ul class="navbar-nav"><a class="nav-link buton" href="#second">Works</a></ul>
+      <ul class="navbar-nav"><a class="nav-link buton" href="#third">Expertise</a></ul>
+      <ul class="navbar-nav"><a class="nav-link buton" href="#fourth">Certifications</a></ul>
+      <ul class="navbar-nav"><a class="nav-link buton" href="about.html" target="_parent">About</a></ul>
+      <ul class="navbar-nav"><a class="nav-link buton"
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=abhinandkk123@gmail.com" target="_blank">Contact</a></ul>
+    </div>
   </nav>
 
   <!-- section 1 hero section -->
-  <div id="first" >
+  <div id="first">
     <div
       class="container d-flex flex-wrap align-items-center justify-content-evenly border rounded border-secondary px-5 py-5 rounded"
       id="cont">
@@ -45,18 +46,15 @@
           automation, IT support, and customer operations. I bring a rare mix of technical depth and real-world
           problem-solving to software development. Currently building with Python, JavaScript, HTML, CSS and modern web
           technologies, I'm driven by a passion for creating efficient, user-centric web applications that bridge the
-          gap between complex systems and seamless user experiences. currently deepening my skills in Django and REST APIs
+          gap between complex systems and seamless user experiences. currently deepening my skills in Django and REST
+          APIs
         </p><br><br>
         <button type="button" class="btn btn-outline-success">
-          <a class="nav-link"
-            href="https://drive.google.com/file/d/13UW78BRwWdFhGwHXXuXDInQKbbLaHAUy/view?usp=drive_link" target="_blank"
-            id="down">Download Resume ▽</a>
-          </button>
+          <a class="nav-link" href="media/resume.pdf" target="_blank" id="down">Download Resume ▽</a>
+        </button>
       </div>
-
       <div class="img">
-        <img src="https://res.cloudinary.com/daaz5kwqu/image/upload/v1779175129/abhi_khvlst.png" alt="Profile"
-          width="400px">
+        <img src="media/hero img.png" alt="Profile">
       </div>
     </div>
   </div>
@@ -67,10 +65,9 @@
       <!-- project -->
       <div style="text-align: center;">
         <h3 style="color: rgba(25, 135, 84);">Projects</h3>
-        <img class="card-img" src="https://res.cloudinary.com/daaz5kwqu/image/upload/v1779427657/proj_eduffh.png" alt="Projects"
-          width="700px" height="400px" id="projimg">
+        <img class="card-img" src="media/proj.png" alt="Projects" id="projimg">
       </div>
-      <div class="d-flex flex-column gap-5" style="width: 500px;">
+      <div class="d-flex flex-column gap-5" style="width: 100%; max-width: 500px;">
         <!-- calculator-->
         <div class="btn btn-outline-success"><a class="nav-link" href="https://abhinand-devhub.github.io/js.calculator/"
             target="_blank">
@@ -98,8 +95,8 @@
       <!-- experience -->
       <div class="card mb-5" style="width: 350px; background-color: rgba(0, 0, 0, 0.5);">
         <h3 class="card-title card-img-overlay text-light">Experience</h3>
-        <img class="card-img" src="https://res.cloudinary.com/daaz5kwqu/image/upload/v1779427644/exp_zhlbwu.png" alt=""
-          width="350px" height="200px">
+        <img class="card-img" src="media/exp.png" alt="">
+
         <!-- first button -->
         <button class="btn text-success " data-bs-toggle="collapse" data-bs-target="#col1">
           Python Intern
@@ -108,9 +105,10 @@
           <p class="text-secondary px-3">Quest Innovative Solutions | Present</p>
           <div class="card bg-dark text-light">
             <ul>
-              <li>
-                Front end designing with html, CSS and jQuery
-              </li>
+              <li>Front end designing with HTML5, CSS3, jQuery and Bootstrap</li>
+              <li>Python: OOP, Data Structures, Exception Handling, Regular Expressions, Multithreading, Unit Testing,
+                Tkinter GUI Development, File Handling, and Object-Oriented Design Principles.</li>
+              <li>DBMS with MySQL Workbench</li>
             </ul>
           </div>
         </div>
@@ -175,8 +173,7 @@
       <!-- skills -->
       <div class="card mb-5" style="width: 350px; background-color: rgba(0, 0, 0, 0.5);">
         <h3 class="card-title card-img-overlay text-light">Skills</h3>
-        <img class="card-img" src="https://res.cloudinary.com/daaz5kwqu/image/upload/v1779427630/skill_phj5p0.png"
-          alt="" width="350px" height="200px">
+        <img class="card-img" src="media/skill.png">
 
         <!-- button1 -->
         <button class="btn text-success" data-bs-toggle="collapse" data-bs-target="#colskil1">
@@ -258,56 +255,49 @@
   </div>
 
   <!-- section4 Certifications -->
-  <div class="container" id="fourth" >
-  <h3  class="d-flex align-items-center justify-content-center pb-3" style="color: rgba(25, 135, 84);">Certifications</h3>
-  <div class="container d-flex flex-wrap align-items-center justify-content-evenly" id="cert">
-    <a href="https://res.cloudinary.com/daaz5kwqu/image/upload/v1780586959/sql_into_certificate_mrgive.jpg" target="_parent" class="img-btn">
-      <img src="https://res.cloudinary.com/daaz5kwqu/image/upload/v1780932084/sololearn_tbwimq.webp" alt="SOLO-LEARN"
-        height="80px">
-    </a>
-    <a href="https://res.cloudinary.com/daaz5kwqu/image/upload/v1779721436/smec_mdcepx.webp" target="_self" class="img-btn">
-      <img src="https://res.cloudinary.com/daaz5kwqu/image/upload/v1780932080/smec_logo_nhfqft.webp" alt="SMEC"
-        height="80px">
-    </a>
-    <a href="https://res.cloudinary.com/daaz5kwqu/image/upload/v1779721433/employability_pqyv48.webp" target="_parent" class="img-btn">
-      <img src="https://res.cloudinary.com/daaz5kwqu/image/upload/v1780932082/kase_n43dac.webp" alt="KASE"
-        height="80px">
-    </a>
-    <a href="https://res.cloudinary.com/daaz5kwqu/image/upload/v1779721436/datri_ulnuiq.webp" target="_parent" class="img-btn">
-      <img src="https://res.cloudinary.com/daaz5kwqu/image/upload/v1780932080/datri_logo_t85qdp.webp" alt="DATRI"
-        height="80px">
-    </a>
-    <a href="https://res.cloudinary.com/daaz5kwqu/image/upload/v1780933899/zsi_cert_xcsdaz.webp" target="_parent" class="img-btn">
-      <img src="https://res.cloudinary.com/daaz5kwqu/image/upload/v1780932080/moefcc_pfbpzs.webp" alt="ZSI"
-        height="80px">
-    </a>
-  </div>
+  <div class="container" id="fourth">
+    <h3 class="d-flex align-items-center justify-content-center" style="color: rgba(25, 135, 84);">Certifications</h3>
+    <div class="container d-flex flex-wrap align-items-center justify-content-evenly" id="cert">
+      <a href="media/sololearn certificate.webp" target="_parent" class="img-btn p-3">
+        <img src="media/sololearn.webp" alt="SOLO-LEARN" height="80px">
+      </a>
+      <a href="media/smec certificate.webp" target="_self" class="img-btn p-3">
+        <img src="media/smec logo.webp" alt="SMEC" height="80px">
+      </a>
+      <a href="media/employability certificate.webp" target="_parent" class="img-btn p-3">
+        <img src="media/kase.webp" alt="KASE" height="80px">
+      </a>
+      <a href="media/datri certificate.webp" target="_parent" class="img-btn p-3">
+        <img src="media/datri logo.webp" alt="DATRI" height="80px">
+      </a>
+      <a href="media/z" target="_parent" class="img-btn p-3">
+        <img src="media/moefcc.webp" alt="ZSI" height="80px">
+      </a>
+    </div>
   </div>
 
   <!-- section5 social tags -->
   <div class="container d-flex  justify-content-center gap-5" id="fifth">
     <a href="http://www.linkedin.com/in/abhinand-kk" target="_blank" class="img-btn2">
-      <img src="https://res.cloudinary.com/daaz5kwqu/image/upload/v1779429873/linkedln_kdsqpi.png" alt="Linkedln"
-        width="30" height="30">
+      <img src="media/linkedln.png" alt="Linkedln" width="30" height="30">
     </a>
     <a href="https://github.com/Abhinand-devhub" target="_blank" class="img-btn2">
-      <img src="https://res.cloudinary.com/daaz5kwqu/image/upload/v1779466660/git_og50fs.png" alt="Github"
-        width="30" height="30">
+      <img src="media/git.png" alt="Github" width="30" height="30">
     </a>
   </div>
 
   <!-- footer -->
-  <footer class="d-flex justify-content-center pt-2" id="foot">
+  <div class="d-flex justify-content-center pt-2" id="foot">
     <p>© 2026 Abhinand</p>
-  </footer>
+  </div>
 
   <!-- animation shape -->
-<div class="bg-shapes">
-  <div class="triangle t1"></div>
-  <div class="triangle t2"></div>
-  <div class="triangle t3"></div>
-  <div class="triangle t4"></div>
-</div>
+  <div class="bg-shapes">
+    <div class="triangle t1"></div>
+    <div class="triangle t2"></div>
+    <div class="triangle t3"></div>
+    <div class="triangle t4"></div>
+  </div>
 
 </body>
 

@@ -82,9 +82,15 @@ html {
     color: rgb(255, 255, 255) !important;
 }
 
-footer {
+#foot {
     background: rgba(0, 0, 0, 0.3);
     color: white;
+}
+
+.img img,
+.card-img {
+    max-width: 100%;
+    height: auto;
 }
 
 .img-btn {
@@ -92,14 +98,15 @@ footer {
 }
 
 .img-btn:hover {
-    transform: translateY(-10px);
     transition: 0.3s;
     opacity: 1;
+    scale: 1.3;
 }
 
 .img-btn2:hover {
-    transform: rotate(45deg) scale(2);
+    transform: translateY(-18px) rotate(360deg) scale(2);
     transition: 0.5s;
+    scale: 1.2;
 }
 
 .bg-shapes {
@@ -191,21 +198,14 @@ footer {
 
 
 /* to responsive on mobiles */
-@media(max-width: 450px) {
-    .navbar-nav {
-        display: flex;
-        flex-direction:row !important;
-        justify-content: end !important;
-        width: 100%;
-        position: relative
-    }
-    #first,#second{
+.card{ width: 100% !important; max-width: 350px;}
+@media(max-width: 768px) {
+    #first,
+    #second {
         width: fit-content !important;
         margin: 0% !important;
     }
     #foot{
         width: 100% !important;
     }
-
-    
 }
