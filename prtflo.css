@@ -104,9 +104,9 @@ html {
 }
 
 .img-btn2:hover {
-    transform: translateY(-18px) rotate(360deg) scale(2);
-    transition: 0.5s;
-    scale: 1.2;
+    transform:translateY(-8px) rotate(360deg);
+    transition: 0.7s;
+    scale: 2;
 }
 
 .bg-shapes {
